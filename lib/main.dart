@@ -1,3 +1,4 @@
+import 'package:ahmed_nots_app/views/widgets/notes_view_body.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -5,24 +6,14 @@ void main() {
 }
 
 class NotesApp extends StatelessWidget {
-  const NotesApp({Key? key}) : super(key: key);
+  const NotesApp({super.key});
 
   @override
-  Widget build(BuildContext context){
-return MaterialApp(
-    theme: ThemeData.dark(),
-    home:Scaffold(appBar: AppBar(
-      title: const Text('Home Page'),
-      backgroundColor: Colors.blue ,
-    ),
-    body: Center(
-      child: Text('hi')
-    ),
-    ),
-);
-
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(brightness: Brightness.dark, fontFamily: 'Roboto'),
+      home: Scaffold(body: NotesViewsBody()),
+    );
   }
 }
-  
-  
-  

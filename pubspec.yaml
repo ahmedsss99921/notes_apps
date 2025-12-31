@@ -17,6 +17,7 @@ dependencies:
 
   cupertino_icons: ^1.0.8
   rename: ^3.1.0
+  font_awesome_flutter: ^10.7.0
 
 dev_dependencies:
   flutter_test:
@@ -32,3 +33,8 @@ flutter:
   uses-material-design: true
 
   
+fonts:
+    - family: Roboto
+      fonts: 
+           asset: assets\fonts\Roboto_Condensed-Bold.ttf
+
