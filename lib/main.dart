@@ -1,4 +1,4 @@
-import 'package:ahmed_nots_app/views/widgets/notes_view_body.dart';
+import 'package:ahmed_nots_app/views/notes_views.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -13,7 +13,7 @@ class NotesApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(brightness: Brightness.dark, fontFamily: 'Roboto'),
-      home: Scaffold(body: NotesViewsBody()),
+      home: const NotesViews(),
     );
   }
 }
